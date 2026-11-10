@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>CCI // COLD CASE INITIATIVE</title>
+  <meta name="theme-color" content="#02040a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%2302040a'/%3E%3Crect x='3' y='3' width='10' height='10' fill='none' stroke='%232f6bff'/%3E%3C/svg%3E">
+</head>
+<body>
+  <div class="desktop" id="desktop">
+    <header class="topbar" dir="ltr" lang="en">
+      <div class="brand">
+        <span class="led" aria-hidden="true"></span>
+        <span>CCI-OS 4.2</span>
+        <span class="dept-long">COLD CASE INITIATIVE</span>
+      </div>
+      <div class="topbar-meta">
+        <span class="hide-sm">TERMINAL 07</span>
+        <span id="clearance-count">02 / 08</span>
+        <span id="clock">--:--:--</span>
+      </div>
+    </header>
+
+    <main class="tablet">
+      <div class="mast" dir="ltr" lang="en">
+        <p class="eyebrow">SECURE TABLET // HOME</p>
+        <h1>COLD CASE INITIATIVE</h1>
+        <p class="sub">DIGITAL ARCHIVE — FIELD READER</p>
+        <div class="legend">
+          <span><i class="swatch open" aria-hidden="true"></i>ACCESS GRANTED</span>
+          <span><i class="swatch shut" aria-hidden="true"></i>RESTRICTED</span>
+        </div>
+      </div>
+
+      <nav class="file-grid" aria-label="Archive folders">
+        <button type="button" class="folder unlocked" data-file="file-00">
+          <span class="folder-icon" aria-hidden="true">
+            <svg class="lock-icon" viewBox="0 0 24 24" focusable="false"><path fill="currentColor" d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5zm-3 8V7a3 3 0 0 1 6 0v3H9z"/></svg>
+          </span>
+          <span class="folder-name">FILE 00</span>
+          <span class="folder-sub">ROSTER</span>
+          <span class="folder-state">ACCESS GRANTED</span>
+        </button>
+        <button type="button" class="folder unlocked" data-file="case-01">
+          <span class="folder-icon" aria-hidden="true">
+            <svg class="lock-icon" viewBox="0 0 24 24" focusable="false"><path fill="currentColor" d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5zm-3 8V7a3 3 0 0 1 6 0v3H9z"/></svg>
+          </span>
+          <span class="folder-name">CASE 01</span>
+          <span class="folder-sub">STAIRWELL</span>
+          <span class="folder-state">ACCESS GRANTED</span>
+        </button>
+        <button type="button" class="folder locked" data-file="case-02" disabled>
+          <span class="folder-icon" aria-hidden="true">
+            <svg class="lock-icon" viewBox="0 0 24 24" focusable="false"><path fill="currentColor" d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5zm-3 8V7a3 3 0 0 1 6 0v3H9z"/></svg>
+          </span>
+          <span class="folder-name">CASE 02</span>
+          <span class="folder-sub">KINGSLEY</span>
+          <span class="folder-state">RESTRICTED</span>
+        </button>
+        <button type="button" class="folder locked" data-file="case-03" disabled>
+          <span class="folder-icon" aria-hidden="true">
+            <svg class="lock-icon" viewBox="0 0 24 24" focusable="false"><path fill="currentColor" d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5zm-3 8V7a3 3 0 0 1 6 0v3H9z"/></svg>
+          </span>
+          <span class="folder-name">CASE 03</span>
+          <span class="folder-sub">STERLING</span>
+          <span class="folder-state">RESTRICTED</span>
+        </button>
+        <button type="button" class="folder locked" data-file="case-04" disabled>
+          <span class="folder-icon" aria-hidden="true">
+            <svg class="lock-icon" viewBox="0 0 24 24" focusable="false"><path fill="currentColor" d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5zm-3 8V7a3 3 0 0 1 6 0v3H9z"/></svg>
+          </span>
+          <span class="folder-name">CASE 04</span>
+          <span class="folder-sub">PATTERN</span>
+          <span class="folder-state">RESTRICTED</span>
+        </button>
+        <button type="button" class="folder locked" data-file="case-05" disabled>
+          <span class="folder-icon" aria-hidden="true">
+            <svg class="lock-icon" viewBox="0 0 24 24" focusable="false"><path fill="currentColor" d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5zm-3 8V7a3 3 0 0 1 6 0v3H9z"/></svg>
+          </span>
+          <span class="folder-name">CASE 05</span>
+          <span class="folder-sub">SHADOW</span>
+          <span class="folder-state">RESTRICTED</span>
+        </button>
+        <button type="button" class="folder locked" data-file="case-06" disabled>
+          <span class="folder-icon" aria-hidden="true">
+            <svg class="lock-icon" viewBox="0 0 24 24" focusable="false"><path fill="currentColor" d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5zm-3 8V7a3 3 0 0 1 6 0v3H9z"/></svg>
+          </span>
+          <span class="folder-name">CASE 06</span>
+          <span class="folder-sub">GHOST</span>
+          <span class="folder-state">RESTRICTED</span>
+        </button>
+        <button type="button" class="folder locked" data-file="file-07" disabled>
+          <span class="folder-icon" aria-hidden="true">
+            <svg class="lock-icon" viewBox="0 0 24 24" focusable="false"><path fill="currentColor" d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5zm-3 8V7a3 3 0 0 1 6 0v3H9z"/></svg>
+          </span>
+          <span class="folder-name">FILE 07</span>
+          <span class="folder-sub">RESTRICTED</span>
+          <span class="folder-state">RESTRICTED</span>
+        </button>
+      </nav>
+
+      <p class="hint" dir="ltr" lang="en">Locked files unlock in sequence. Open the file, scroll to the end, then press [ CLOSE FILE ].</p>
+    </main>
+
+    <footer class="bottombar" id="bottombar" dir="ltr" lang="en">
+      <div class="pips" aria-hidden="true">
+        <span class="pip on" data-file="file-00"></span>
+        <span class="pip on" data-file="case-01"></span>
+        <span class="pip" data-file="case-02"></span>
+        <span class="pip" data-file="case-03"></span>
+        <span class="pip" data-file="case-04"></span>
+        <span class="pip" data-file="case-05"></span>
+        <span class="pip" data-file="case-06"></span>
+        <span class="pip" data-file="file-07"></span>
+      </div>
+      <span id="sequence-label">NEXT LOCK: CASE 02 — CLOSE CASE 01 AT END OF FILE</span>
+    </footer>
+  </div>
+
+  <div class="modal" id="modal" hidden>
+    <div class="modal-window" id="modal-window" role="dialog" aria-modal="true" aria-label="Archive">
+      <header class="modal-head" dir="ltr" lang="en">
+        <button type="button" id="close-file"><span id="close-label">[ CLOSE FILE ]</span></button>
+      </header>
+      <div class="modal-body" id="modal-body">
+
+        <article class="file-panel" data-file="file-00" hidden>
+          <header class="file-banner" dir="ltr" lang="en">
+            <p class="sys-kicker">FILE 00 // ADMINISTRATIVE</p>
+            <h2>PERSONNEL CLEARANCE &amp; ROSTER</h2>
+            <p>ACCESS LEVEL: ADMINISTRATIVE</p>
+            <p>DEPARTMENT: COLD CASE INITIATIVE</p>
+          </header>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[DOCUMENT 01: INITIATIVE ID BADGE &amp; BIO - NOURAN F.]</h3>
+          <div class="narrative" dir="ltr" lang="en">
+            <p>TITLE: Forensic &amp; Medical Specialist</p>
+            <p>BACKGROUND: Recruited directly from her medical residency following her independent consultation on the "Untouchable" anomaly two years ago.</p>
+            <p>SPECIALTY: Forensic odontology, post-mortem pathology, and physical evidence reconstruction.</p>
+            <p>EVALUATION NOTES: Highly independent. Possesses an exceptional eye for physical anomalies that traditional coroners miss. Empathic to victims, but possesses a low tolerance for bureaucratic incompetence.</p>
+          </div>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[DOCUMENT 02: INITIATIVE ID BADGE &amp; BIO - ALI M.]</h3>
+          <div class="narrative" dir="ltr" lang="en">
+            <p>TITLE: Data &amp; Pattern Analyst</p>
+            <p>BACKGROUND: Recruited alongside Nouran F. Background check: Flawless. No prior criminal records, no financial anomalies.</p>
+            <p>SPECIALTY: Digital architecture, telemetry extraction, and predictive behavioral modeling.</p>
+            <p>EVALUATION NOTES: Strategic and highly analytical. Tends to overthink risk variables. Rarely leaves his terminal during active field operations, preferring to control the environment digitally.</p>
+          </div>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[DOCUMENT 03: SUPERVISOR'S INTERNAL MEMO]</h3>
+          <div class="narrative" dir="ltr" lang="en">
+            <p>TO: Department Chief</p>
+            <p>FROM: Unit Director</p>
+            <p>SUBJECT: Partnership Dynamic (Ali &amp; Nouran)</p>
+            <p>Per your request, I've reviewed the decision to keep Ali and Nouran permanently partnered. Yes, they operate almost entirely outside standard protocol. Yes, their desks are a mess of old takeout containers and unauthorized server wires. And yes, their constant sarcastic banter in the bullpen is exhausting to listen to.</p>
+            <p>However, I strongly advise against separating them.</p>
+            <p>They were brought in together after they broke that first case as volunteers, and their dynamic is the only reason they close files at this rate. Ali sees the digital grid; Nouran sees the physical reality. They trust each other implicitly. Let them work.</p>
+          </div>
+          <div class="eof-sentinel" dir="ltr" lang="en"><span>— END OF FILE —</span></div>
+        </article>
+
+        <article class="file-panel" data-file="case-01" hidden>
+          <header class="file-banner" dir="ltr" lang="en">
+            <p class="sys-kicker">CASE 01</p>
+            <h2>THE STAIRWELL ANOMALY</h2>
+            <p>STATUS: CLOSED</p>
+            <p>LEAD INVESTIGATORS: ALI M. &amp; NOURAN F.</p>
+          </header>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[DOCUMENT 01: DIGITIZED INCIDENT REPORT]</h3>
+          <div class="data-sheet" dir="ltr" lang="en">
+            <p>Incident Date: October 14, 2021</p>
+            <p>Location: North Campus, Level 4 Concrete Parking Stairwell</p>
+            <p>Victim: Liam Vance (Age 20)</p>
+            <p>Summary of Scene: Victim discovered at the base of the stairwell by campus security at 06:15. Severe blunt force trauma to the cranium, multiple rib contusions. Blood alcohol content at 0.14. No witnesses. Heavy rainfall during the night compromised trace evidence.</p>
+            <p class="ruling">OFFICIAL RULING: ACCIDENTAL FALL. CASE CLOSED.</p>
+          </div>
+          <div class="note" dir="ltr" lang="en">
+            <p>NOURAN'S NOTE: The ME was lazy. They saw a drunk kid and stopped looking. Look at the ulna. Look at the defensive posture. This wasn't a slip.</p>
+          </div>
+
+          <div class="chat-block">
+            <h3 class="sys-header" dir="ltr" lang="en">[SECURE CHAT LOG: INITIATIVE INTERNAL NETWORK - 01:14 AM]</h3>
+            <button type="button" class="preview-chat" dir="ltr" lang="en" aria-expanded="false" aria-controls="chat-01">&gt; [ PREVIEW CHAT ]</button>
+            <p class="cipher-wait" dir="ltr" lang="en">ENCRYPTED CHANNEL // AWAITING KEY</p>
+            <div class="chat-body" id="chat-01">
+              <div class="chat-inner" inert aria-hidden="true">
+                <div class="chat-log" dir="ltr" lang="en">
+                  <p class="chat-line"><bdi class="who">Nouran:</bdi> I just pulled the Vance file from the 2021 backlog. The original detective was an absolute idiot.</p>
+                  <p class="chat-line"><bdi class="who">Ali:</bdi> It's 1 AM, Nouran. And it's efficient paperwork. You can't blame a bureaucrat for loving efficiency.</p>
+                  <p class="chat-line"><bdi class="who">Nouran:</bdi> I can when it lets a killer walk. He stamped this "accident" before the body was even cold. The system is broken, Ali.</p>
+                  <p class="chat-line"><bdi class="who">Ali:</bdi> The system isn't broken. It's just blind. Sometimes someone just has to force its eyes open.</p>
+                  <p class="chat-line"><bdi class="who">Nouran:</bdi> Come over to my desk. Look at this watch.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[NARRATIVE LOG: ALI]</h3>
+          <div class="narrative" dir="ltr" lang="en">
+            <p>The Cold Case Initiative office at 1:00 AM always felt like a submarine. Outside, the Cairo rain was beating relentlessly against the reinforced glass, but inside, the only sound was the low, steady hum of the server racks and the clicking of Nouran's mouse.</p>
+            <p>I pushed my chair back, grabbed my lukewarm coffee, and walked over to her desk.</p>
+            <p>Nouran's monitors were always a chaotic mess of bone scans, autopsy reports, and high-res crime scene photos. It was a digital graveyard, and she navigated it better than anyone I had ever met. Right now, she had the police photos pulled up from the bottom of the stairwell. The victim, Liam Vance, was sprawled awkwardly on the wet concrete.</p>
+            <p>She didn't point to the blood. She didn't point to the angle of the stairs. She tapped her pen against a zoomed-in medical scan of the victim's right forearm.</p>
+            <p>"Parry fracture," she said, not even looking up at me. "Right across the distal third of the ulna."</p>
+            <p>I leaned in, resting a hand on the back of her chair. "Explain it to the data guy."</p>
+            <p>"You only get a hairline crack on that specific part of the bone if you raise your arm over your face to block a heavy, downward strike," she explained, tracing the faint white fracture line on the screen. "If you fall down the stairs, you break your wrists trying to catch yourself. Liam didn't fall. Someone hit him with something heavy, like a tire iron or a pipe, and then he went over the edge."</p>
+            <p>She swiped the screen, bringing up a macro-photograph of the victim's wrist.</p>
+          </div>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[EVIDENCE FILE: ITEM #04 - WRISTWATCH]</h3>
+          <figure class="evidence" dir="ltr" lang="en">
+            <img src="./Story/Case01.jpg" alt="Macro photograph of the victim's wristwatch, Evidence Item 04">
+            <figcaption>ITEM #04 — WRISTWATCH</figcaption>
+          </figure>
+          <div class="data-sheet" dir="ltr" lang="en">
+            <p>AUTOPSY EXCERPT (PAGE 12): "Rigor mortis progression and post-mortem lividity indicate time of death occurred between 11:15 PM and 11:45 PM."</p>
+          </div>
+          <div class="note" dir="ltr" lang="en">
+            <p>Nouran's Audio Note: "The original detective noted the watch broke during the fall, stopping at 1:15 AM, giving the prime suspect a perfect alibi. But look at the lividity report. The victim's heart stopped beating two hours before that watch broke. The killer smashed it on the concrete after the fact to create a fake timeline. They thought they were being smart."</p>
+          </div>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[NARRATIVE LOG: ALI]</h3>
+          <div class="narrative" dir="ltr" lang="en">
+            <p>The killer thought they were being smart, but they were dealing with Nouran.</p>
+            <p>The prime suspect five years ago was Julian Cross, a former classmate whose family owned half the commercial real estate downtown. Julian had the kind of wealth that acted as a physical shield against consequences. He had an airtight alibi: his phone's GPS history and a highly compensated VIP club bouncer placed him at a lounge across town at exactly 11:30 PM. The police took the alibi, bowed to his family's lawyers, and closed the file.</p>
+            <p>But people with money always forget that their phones aren't the only things talking to the nearest cell tower.</p>
+            <p>I walked back to my terminal. The green glow of my own monitors washed over the desk. I didn't need a warrant to look at Julian's life; I just needed a backdoor. Julian drove a 2021 Aston Martin—a rolling computer. I cracked my knuckles, opened a secure terminal window, and wrote a script to bypass the manufacturer's firewall.</p>
+            <p>I knew exactly what I was looking for. It took me twelve minutes to breach the server, isolate his specific VIN, and pull the raw telemetry data from that night in October.</p>
+            <p>When the table populated on my screen, I couldn't help but smile.</p>
+          </div>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[DATA EXPORT: VEHICLE TELEMETRY - J. CROSS]</h3>
+          <div class="table-wrap" dir="ltr" lang="en">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Timestamp</th>
+                  <th>Vehicle Status</th>
+                  <th>Location Ping</th>
+                  <th>Distance from Crime Scene</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>23:05:12</td>
+                  <td>Engine ON</td>
+                  <td>VIP Lounge Valet</td>
+                  <td>4.2 miles</td>
+                </tr>
+                <tr class="hot">
+                  <td>23:22:45</td>
+                  <td>Engine OFF</td>
+                  <td>4th St. Parking Structure</td>
+                  <td>0.1 miles</td>
+                </tr>
+                <tr class="hot">
+                  <td>23:25:01</td>
+                  <td>Bluetooth Disconnect</td>
+                  <td>4th St. Parking Structure</td>
+                  <td>0.1 miles</td>
+                </tr>
+                <tr class="hot">
+                  <td>23:48:30</td>
+                  <td>Engine ON</td>
+                  <td>4th St. Parking Structure</td>
+                  <td>0.1 miles</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[NARRATIVE LOG: ALI]</h3>
+          <div class="narrative" dir="ltr" lang="en">
+            <p>He had left his phone at the club to build the alibi, driven to the stairwell, ambushed Liam, pushed him over the edge, smashed the watch to manipulate the timeline, and driven back. The raw data proved he was there.</p>
+            <p>But data is circumstantial in a courtroom. A decent defense attorney would just claim Julian lent his car to an unnamed friend. We didn't need data. We needed him to hang himself with it.</p>
+            <p>We brought him in the next morning at 9:00 AM under the guise of a "routine file update."</p>
+            <p>Julian sat in Interrogation Room 2 looking exactly like a guy who had never been told 'no' in his life. He wore a tailored suit that cost more than my car, checking his pristine, unbroken watch every thirty seconds. He didn't know we were about to drop the floor out from under him.</p>
+          </div>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[AUDIO TRANSCRIPT: INTERROGATION ROOM 2]</h3>
+          <div class="transcript">
+            <p dir="ltr" lang="en"><bdi class="who">Julian Cross:</bdi> I don't know why I'm here. My family's lawyers have already told the city we aren't answering any more questions about Liam. It was a tragedy. He slipped. We moved on.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Nouran:</bdi> Look at the photo, Julian.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Julian Cross:</bdi> I don't want to look at a body. I have rights.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Nouran:</bdi> It's a bone scan.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Julian Cross:</bdi> [Silence]</p>
+            <p dir="ltr" lang="en"><bdi class="who">Nouran:</bdi> We found a micro-transfer of skin cells trapped deep inside the hairline fracture on Liam's arm. You hit him hard, Julian. Hard enough to embed your own DNA into his bone. Five years ago, the equipment to isolate a sample that small didn't exist. Today, it does.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Ali:</bdi> The lab requisition is processing through the national database now. The new system takes about twenty minutes to return a DNA match. We're at minute eighteen.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Julian Cross:</bdi> That's... that's a bluff. I wasn't there. You know my phone was at the club.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Nouran:</bdi> The DNA doesn't care where your phone was, Julian.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Julian Cross:</bdi> Listen. Listen to me. Both of you. You work for a severely underfunded city initiative. I know what you make in a year. Whatever the city is paying you, I can triple it right now. Cash. Today. I'll make a phone call and it'll be in your accounts before you finish your shift. You just have to lose the swab. Claim it was corrupted.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Ali:</bdi> Did you get that on the mic, Nouran?</p>
+            <p dir="ltr" lang="en"><bdi class="who">Nouran:</bdi> Loud and clear.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Julian Cross:</bdi> Wait—no—</p>
+          </div>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[CASE STATUS UPDATE]</h3>
+          <div class="status-update is-closed" dir="ltr" lang="en">
+            <p>UPDATE: Suspect Julian Cross detained. Charged with Murder in the Second Degree, Obstruction of Justice, and Attempted Bribery of a City Official.</p>
+            <p>STATUS: CLOSED.</p>
+          </div>
+          <div class="eof-sentinel" dir="ltr" lang="en"><span>— END OF FILE —</span></div>
+        </article>
+
+        <article class="file-panel" data-file="case-02" hidden>
+          <header class="file-banner" dir="ltr" lang="en">
+            <p class="sys-kicker">CASE 02</p>
+            <h2>THE KINGSLEY WAREHOUSE</h2>
+            <p>STATUS: ACTIVE / FIELD OPERATION</p>
+            <p>LEAD INVESTIGATORS: ALI M. &amp; NOURAN F.</p>
+          </header>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[DOCUMENT 01: DIGITIZED INCIDENT REPORT]</h3>
+          <div class="data-sheet" dir="ltr" lang="en">
+            <p>Incident Date: August 22, 2022</p>
+            <p>Location: Industrial District, Alley behind Kingsley Transit Warehouse</p>
+            <p>Victim: Marcus Thorne (Age 34)</p>
+            <p>Summary of Scene: Victim discovered by sanitation workers. Severe contusions on the torso and face. Cause of death ruled as internal bleeding from blunt force trauma. Location is known territory for the 'Iron Syndicate' smuggling ring. No witnesses. No physical evidence recovered.</p>
+            <p class="ruling">OFFICIAL RULING: GANG ALTERCATION. UNSOLVED. CASE INACTIVE.</p>
+          </div>
+          <div class="note" dir="ltr" lang="en">
+            <p>NOURAN'S NOTE: Look at the spacing of the rib fractures on the medical examiner's report. They didn't just beat him; they took their time. It was an interrogation. He hid something inside that warehouse before they caught him in the alley.</p>
+          </div>
+
+          <div class="chat-block">
+            <h3 class="sys-header" dir="ltr" lang="en">[SECURE CHAT LOG: INITIATIVE INTERNAL NETWORK - 22:45 PM]</h3>
+            <button type="button" class="preview-chat" dir="ltr" lang="en" aria-expanded="false" aria-controls="chat-02">&gt; [ PREVIEW CHAT ]</button>
+            <p class="cipher-wait" dir="ltr" lang="en">ENCRYPTED CHANNEL // AWAITING KEY</p>
+            <div class="chat-body" id="chat-02">
+              <div class="chat-inner" inert aria-hidden="true">
+                <div class="chat-log" dir="ltr" lang="en">
+                  <p class="chat-line"><bdi class="who">Nouran:</bdi> The police never actually searched the Kingsley warehouse. They just assumed it was a random gang hit outside. If Marcus hid a ledger or a drive in there, it's been sitting there for four years.</p>
+                  <p class="chat-line"><bdi class="who">Ali:</bdi> It's also an active Syndicate front, Nouran. They run illegal shipments through there every night. They have armed guards.</p>
+                  <p class="chat-line"><bdi class="who">Nouran:</bdi> I can get in through the old ventilation grate on the south alley. I checked the municipal blueprints.</p>
+                  <p class="chat-line"><bdi class="who">Ali:</bdi> Absolutely not. Do not go down there.</p>
+                  <p class="chat-line"><bdi class="who">Nouran:</bdi> Physical evidence decays, Ali. If they renovate that building, whatever he hid is gone forever.</p>
+                  <p class="chat-line"><bdi class="who">Ali:</bdi> Give me a few hours. I will find a digital entry point. Just stay put. Promise me you're going home.</p>
+                  <p class="chat-line"><bdi class="who">Nouran:</bdi> Fine. I'm going home.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[NARRATIVE LOG: ALI]</h3>
+          <div class="narrative" dir="ltr" lang="en">
+            <p>I knew she was lying the second she typed the word 'fine.' Nouran doesn't do 'fine.' But as I sat alone in my apartment at 3:15 AM, staring at three monitors glowing in the dark, I desperately hoped she had actually listened to me for once.</p>
+            <p>My coffee had gone cold hours ago, replaced by the adrenaline of committing a federal cyber-felony. I had made a decision: if she thought there was evidence in that building, she would eventually try to find it. The only way to stop her from walking blindly into a warehouse guarded by armed smugglers tomorrow was to steal the evidence digitally tonight. I wanted to have it waiting on her desk in the morning so she wouldn't have a reason to go.</p>
+            <p>The Syndicate wasn't stupid. They didn't connect their security cameras to the city grid. They used a closed-loop, encrypted wireless network. But every network has a handshake, and every handshake can be intercepted if you're willing to break enough laws to do it. I just needed to map their patrols, find the blind spots, and prove the ledger existed.</p>
+            <p>At 3:22 AM, my script finally brute-forced the encryption key.</p>
+            <p>The screen blinked, and the closed-circuit feeds from the Kingsley Warehouse flooded my monitors. Twelve different camera angles in gritty, green-tinted night vision. I leaned forward, expecting to see empty loading docks and bored guards pacing in the dark.</p>
+            <p>Instead, I looked at Camera 4.</p>
+            <p>My stomach completely dropped out. My blood turned to ice water.</p>
+          </div>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[EVIDENCE SCAN: INTERCEPTED CCTV FEED]</h3>
+          <div class="data-sheet" dir="ltr" lang="en">
+            <p>NETWORK TIMESTAMP: 03:24:11 AM</p>
+            <p class="ruling">SYSTEM WARNING: MOTION DETECTED - SECTOR 4</p>
+          </div>
+          <figure class="evidence" dir="ltr" lang="en">
+            <img src="./Story/Case02.jpg" alt="Intercepted night-vision CCTV still, Camera 4, Kingsley warehouse">
+            <figcaption>CAMERA 4 — 03:24:11</figcaption>
+          </figure>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[NARRATIVE LOG: ALI]</h3>
+          <div class="narrative" dir="ltr" lang="en">
+            <p>It was Nouran.</p>
+            <p>She was wearing a dark jacket, crouched by the south alley fence, picking the padlock. She hadn't gone home. While I was sitting in my safe apartment trying to solve the problem digitally, she was already standing in the cold, risking her life in physical reality.</p>
+            <p>Panic hit me like a physical blow. I was going to kill her. If the Syndicate didn't do it first.</p>
+            <p>My eyes darted to Camera 1. A black SUV was pulling up to the front loading dock. Four men stepped out, two of them carrying slung rifles. They were starting their perimeter sweep. If Nouran made it through the fence, she was going to walk directly into their patrol route in less than sixty seconds.</p>
+            <p>I grabbed my cell phone with shaking hands and dialed her number.</p>
+          </div>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[AUDIO TRANSCRIPT: MOBILE RECORDING]</h3>
+          <div class="transcript">
+            <p dir="ltr" lang="en"><bdi class="who">Nouran:</bdi> Ali, I told you I went home.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Ali:</bdi> Drop the lockpick. Move exactly three feet to your left and press your back flat against the brick wall. Now.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Nouran:</bdi> ...What?</p>
+            <p dir="ltr" lang="en"><bdi class="who">Ali:</bdi> Do it, Nouran!</p>
+            <p dir="ltr" lang="en"><bdi class="who">Nouran:</bdi> How do you—</p>
+            <p dir="ltr" lang="en"><bdi class="who">Ali:</bdi> I'm looking at you on Camera 4. I cracked their network. There are two armed men walking around the corner of the alley right now. Hold your breath.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Nouran:</bdi> Okay. Okay, you see everything?</p>
+            <p dir="ltr" lang="en"><bdi class="who">Ali:</bdi> I see everything. You are out of your mind, Nouran. Turn around and go back to your car.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Nouran:</bdi> Not without the evidence. The vent is right above me. Guide me to the manager's office on the second floor.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Ali:</bdi> Nouran, please—</p>
+            <p dir="ltr" lang="en"><bdi class="who">Nouran:</bdi> You're my Oracle, Ali. Tell me when to move.</p>
+          </div>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[NARRATIVE LOG: ALI]</h3>
+          <div class="narrative" dir="ltr" lang="en">
+            <p>My hands were shaking over the keyboard, but my voice was dead calm. It had to be. For the next twelve minutes, I played a terrifying game of chess with her life.</p>
+          </div>
+          <div class="transcript">
+            <p dir="ltr" lang="en"><bdi class="who">Ali:</bdi> Wait. Guard by the forklift is turning around. Okay, go. Move behind the shipping crates.</p>
+          </div>
+          <div class="narrative" dir="ltr" lang="en">
+            <p>I watched her through the grainy lenses as she slipped through the shadows of the warehouse. She was entirely fearless. It was the thing I admired most about her, and the thing that terrified me the most. She reached the manager's office, prying up a loose floorboard exactly where the victim's old blueprints suggested it would be.</p>
+            <p>"I have it," she whispered over the phone. "It's a ledger. USB drive taped to the back."</p>
+          </div>
+          <div class="transcript">
+            <p dir="ltr" lang="en"><bdi class="who">Ali:</bdi> Put it in your pocket. Team of three coming up the main stairs. You have forty seconds to get back to the vent.</p>
+          </div>
+          <div class="narrative" dir="ltr" lang="en">
+            <p>When she finally dropped out of the grate and disappeared into the safety of the blind alley, I collapsed back into my chair. My shirt was completely soaked in sweat. I closed the connection to the cameras and buried my face in my hands.</p>
+            <p>She was brilliant. But she was a liability to herself. If I wasn't watching over her, she was going to get herself killed. I made a promise to myself in the dark of my apartment that night: I would always control the narrative. I would hide things from her, alter the data, and manipulate the board if that's what it took to keep her safe. She might hate me for it if she ever found out, but at least she would be alive.</p>
+          </div>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[CASE STATUS UPDATE]</h3>
+          <div class="status-update is-closed" dir="ltr" lang="en">
+            <p>UPDATE: Encrypted USB drive recovered from Kingsley Warehouse submitted to major crimes. Warrants issued for Iron Syndicate leadership.</p>
+            <p>STATUS: CLOSED.</p>
+          </div>
+          <div class="eof-sentinel" dir="ltr" lang="en"><span>— END OF FILE —</span></div>
+        </article>
+
+        <article class="file-panel" data-file="case-03" hidden>
+          <header class="file-banner" dir="ltr" lang="en">
+            <p class="sys-kicker">CASE 03</p>
+            <h2>THE STERLING COLLAPSE</h2>
+            <p>STATUS: ACTIVE / REOPENED</p>
+            <p>LEAD INVESTIGATORS: ALI M. &amp; NOURAN F.</p>
+          </header>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[DOCUMENT 01: DIGITIZED MEDICAL EXAMINER'S REPORT]</h3>
+          <div class="data-sheet" dir="ltr" lang="en">
+            <p>Incident Date: March 12, 2024</p>
+            <p>Location: Executive Office, Sterling Logistics HQ</p>
+            <p>Victim: Richard Sterling (Age 52)</p>
+            <p>Summary of Scene: Victim found unresponsive at his desk by his executive assistant. No signs of struggle. No forced entry. Security cameras show no one entering or leaving the office suite during the time of death.</p>
+            <p>Autopsy Findings: Severe coronary artery occlusion leading to massive myocardial infarction (heart attack). Standard toxicology screen: Negative for narcotics.</p>
+            <p class="ruling">OFFICIAL RULING: NATURAL CAUSES. CASE CLOSED.</p>
+          </div>
+          <div class="note" dir="ltr" lang="en">
+            <p>NOURAN'S NOTE: Heart attacks don't leave puncture wounds on the maxillary gumline.</p>
+          </div>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[NARRATIVE LOG: ALI]</h3>
+          <div class="narrative" dir="ltr" lang="en">
+            <p>It was a quiet Tuesday afternoon. The kind of slow, bureaucratic day where the hum of the AC unit is the loudest thing in the room. We had just closed out a string of minor burglary cold cases, and Nouran was bored. Whenever Nouran got bored, she went digging into the digital archives, pulling random closed files just to grade the original coroner's work.</p>
+            <p>I was typing a routine budget request when I saw the reflection of her monitor on the glass partition between our desks.</p>
+            <p>The name on the file was Richard Sterling.</p>
+            <p>I didn't move. I didn't stop typing. But beneath my ribs, my heart suddenly hammered a violent, irregular rhythm against my sternum.</p>
+            <p>Richard Sterling wasn't just a logistics CEO. Three years ago, one of his shell company's shipping trucks was found abandoned on the side of the highway. The refrigeration unit had been intentionally disabled. Thirty-two smuggled migrants suffocated inside. Sterling used his immense wealth to build an impenetrable legal firewall, throwing a low-level driver under the bus. The driver got life in prison. Sterling walked out of the courthouse a completely free man.</p>
+            <p>Two years later, he dropped dead of a heart attack in his locked, heavily guarded office. Case closed. Natural causes.</p>
+            <p>I had watched the original medical examiner's presentation on this case myself. I knew the file backward and forward. The ME hadn't even bothered to open the victim's mouth.</p>
+            <p>"Ali," Nouran said, shattering the quiet. "Come look at this."</p>
+            <p>I forced my hands to leave the keyboard. I took a breath, stood up, and walked over to her desk, keeping my face entirely blank. "What did you find?"</p>
+          </div>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[AUDIO TRANSCRIPT: BULLPEN DESK 4]</h3>
+          <div class="transcript">
+            <p dir="ltr" lang="en"><bdi class="who">Nouran:</bdi> Richard Sterling. Do you remember him?</p>
+            <p dir="ltr" lang="en"><bdi class="who">Ali:</bdi> The logistics guy. The trafficking case. The system completely failed on that one.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Nouran:</bdi> The system failed him twice. The first time when they let him walk, and the second time when they let his killer walk.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Ali:</bdi> His file says natural causes. Heart attack. He was fifty-two, overweight, and worked eighty-hour weeks.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Nouran:</bdi> That's what the ME saw. But look at the post-mortem dental scans. They took these routinely to identify the body for the estate lawyers, but they didn't actually look at them.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Ali:</bdi> I'm looking. It's just a mouth, Nouran.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Nouran:</bdi> Zoom in on the upper right quadrant. Maxillary gumline. Right above the second molar.</p>
+          </div>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[EVIDENCE SCAN: POST-MORTEM DENTAL IMAGING]</h3>
+          <figure class="evidence" dir="ltr" lang="en">
+            <img src="./Story/Case03.jpg" alt="Post-mortem dental scan of the upper right gumline">
+            <figcaption>POST-MORTEM DENTAL SCAN</figcaption>
+          </figure>
+          <div class="data-sheet" dir="ltr" lang="en">
+            <p>FORENSIC DENTISTRY ANALYSIS (NOURAN F.): "Localized micro-hematoma. Circular contusion measuring 0.4mm in diameter. Depth and tissue displacement are entirely consistent with a 31-gauge hypodermic needle."</p>
+          </div>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[AUDIO TRANSCRIPT: CONTINUED]</h3>
+          <div class="transcript">
+            <p dir="ltr" lang="en"><bdi class="who">Nouran:</bdi> Someone injected him right into the gum.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Ali:</bdi> A trip to the dentist?</p>
+            <p dir="ltr" lang="en"><bdi class="who">Nouran:</bdi> His dental records show he hadn't had work done in eight months. You don't get a fresh micro-bruise like that naturally. And you certainly don't get it from a heart attack.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Ali:</bdi> If someone injected him... what causes a massive coronary but doesn't show up on a standard tox screen?</p>
+            <p dir="ltr" lang="en"><bdi class="who">Nouran:</bdi> Potassium chloride. Highly concentrated. If you push it directly into the bloodstream, it stops the heart instantly. It mimics a myocardial infarction perfectly, and the excess potassium naturally dissipates into the surrounding tissues within a few hours. By the time he was on the autopsy table, his blood levels would have looked completely normal.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Ali:</bdi> That's... that's terrifyingly clinical. There are no cameras showing anyone entering his office. No forced entry.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Nouran:</bdi> Exactly. Whoever did this is a ghost. And they are brilliant.</p>
+          </div>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[NARRATIVE LOG: ALI]</h3>
+          <div class="narrative" dir="ltr" lang="en">
+            <p>I stared at the screen for a full minute before I could speak again. The office felt freezing cold.</p>
+            <p>She had found it.</p>
+            <p>"We need to pull his associate files," I told her, forcing my voice to stay completely level. "If this was a professional hit, maybe one of his old cartel partners tied up a loose end."</p>
+            <p>"Maybe," Nouran said softly, her eyes still locked on the pinpoint bruise. "Or maybe someone out there is taking out the trash."</p>
+            <p>I realized in that exact moment that I could never, ever underestimate her. I thought we were just looking at a standard cold case, but she had just pulled the thread on something massive. Something incredibly dangerous. I knew right then that once Nouran locked onto a target, she was never going to let it go.</p>
+            <p>I sat back down at my terminal. I had to write a script to query known potassium chloride thefts in the tri-state area. I had to sit right next to the smartest detective on earth, and help her hunt a ghost that was already breathing right down our necks.</p>
+          </div>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[CASE STATUS UPDATE]</h3>
+          <div class="status-update is-active" dir="ltr" lang="en">
+            <p>UPDATE: Cause of death officially contested by Cold Case Initiative. Upgraded to Suspected Homicide.</p>
+            <p>STATUS: ACTIVE INVESTIGATION.</p>
+          </div>
+          <div class="eof-sentinel" dir="ltr" lang="en"><span>— END OF FILE —</span></div>
+        </article>
+
+        <article class="file-panel" data-file="case-04" hidden>
+          <header class="file-banner" dir="ltr" lang="en">
+            <p class="sys-kicker">CASE 04</p>
+            <h2>THE PATTERN</h2>
+            <p>STATUS: ACTIVE / CRITICAL</p>
+            <p>LEAD INVESTIGATORS: ALI M. &amp; NOURAN F.</p>
+          </header>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[DOCUMENT 01: INITIATIVE DIGITAL WHITEBOARD EXPORT]</h3>
+          <pre class="terminal-dump" dir="ltr" lang="en">QUERY PARAMETERS: Unsolved / "Accidental" Deaths + High-Profile Acquittals (Last 5 Years)
+MATCHES FOUND: 3
+
+TARGET 01: Richard Sterling (Logistics CEO)
+Accusation: Human Trafficking (32 Counts Manslaughter)
+Legal Result: Charges Dropped — March 12, 2022
+Date of Death: Massive Myocardial Infarction — March 12, 2024
+
+TARGET 02: Honorable Elias Cobb (Circuit Court Judge)
+Accusation: Aggravated Bribery &amp; Witness Tampering
+Legal Result: Cleared by Internal Affairs — November 4, 2022
+Date of Death: Sudden Seizure / Vehicular Crash — November 4, 2023
+
+TARGET 03: David Kessler (Serial Domestic Abuser)
+Accusation: Felony Assault
+Legal Result: Mistrial / Victim Refused to Testify — June 18, 2019
+Date of Death: Severe Allergic Reaction (Coma) — June 18, 2022</pre>
+          <figure class="evidence" dir="ltr" lang="en">
+            <img src="./Story/Case04.jpg" alt="Digital whiteboard mapping three anniversary deaths">
+            <figcaption>PATTERN BOARD — ANNIVERSARIES</figcaption>
+          </figure>
+          <div class="note" dir="ltr" lang="en">
+            <p>NOURAN'S NOTE: Look at the exact dates, Ali. It's an anniversary.</p>
+          </div>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[AUDIO TRANSCRIPT: BULLPEN DESK 4 - 08:30 AM]</h3>
+          <div class="transcript">
+            <p dir="ltr" lang="en"><bdi class="who">Nouran:</bdi> He's not just a hired gun. Hired guns don't care what day it is.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Ali:</bdi> You pulled Cobb and Kessler? Those files were buried in the county archives.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Nouran:</bdi> Once I saw the potassium chloride on Sterling, I knew the killer had a medical background. I ran a cross-matrix algorithm on every suspicious "natural" death involving a high-profile acquittal in the state. Look at the board, Ali.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Ali:</bdi> [Silence]</p>
+            <p dir="ltr" lang="en"><bdi class="who">Nouran:</bdi> Sterling died exactly two years to the day after his charges were dropped. Judge Cobb drove into a bridge abutment exactly one year to the day after he was cleared. And David Kessler went into anaphylactic shock exactly three years to the day after his final victim dropped the restraining order.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Ali:</bdi> It's an anniversary.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Nouran:</bdi> It's a ledger. He's balancing the books. He wants the universe—or maybe just the victims themselves—to know exactly why they are dying.</p>
+          </div>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[NARRATIVE LOG: ALI]</h3>
+          <div class="narrative" dir="ltr" lang="en">
+            <p>Nouran highlighted the dates on the main display. Three red circles glowing on the glass.</p>
+            <p>I didn't breathe for a second.</p>
+            <p>We weren't just looking at an assassin anymore. We were looking at someone who thought they were poetic. Someone who thought they were entirely above the system. I stared at the red ink on the dates, realizing exactly how arrogant this guy really was.</p>
+            <p>He had spent years making sure his methods were untraceable. He had mastered chemical half-lives and blind spots in the cameras. But in all that perfection, he had given himself one fatal indulgence. One point of pride. He wanted them to look at the calendar and know their time was up.</p>
+            <p>And Nouran had just caught him slipping.</p>
+            <p>"You're right," I said, finally tearing my eyes away from the screen to look at her. "He's not just a killer. He's a zealot. And zealots are predictable."</p>
+            <p>"If he operates on the anniversaries of acquittals," Nouran said, her eyes flashing with that intense, obsessive focus I knew so well, "then we can predict his next target. We can scan the court database right now for anyone terrible who walked free exactly one year ago today. If this guy is real, he's going to hit them next."</p>
+            <p>I looked back at the glowing dates. I knew right then we were dealing with someone who wouldn't stop until he was forced to. The trap was already set. And now, I had to sit there and help her bait it.</p>
+          </div>
+
+          <div class="chat-block">
+            <h3 class="sys-header" dir="ltr" lang="en">[SECURE CHAT LOG: INITIATIVE INTERNAL NETWORK - 09:15 AM]</h3>
+            <button type="button" class="preview-chat" dir="ltr" lang="en" aria-expanded="false" aria-controls="chat-04">&gt; [ PREVIEW CHAT ]</button>
+            <p class="cipher-wait" dir="ltr" lang="en">ENCRYPTED CHANNEL // AWAITING KEY</p>
+            <div class="chat-body" id="chat-04">
+              <div class="chat-inner" inert aria-hidden="true">
+                <div class="chat-log" dir="ltr" lang="en">
+                  <p class="chat-line"><bdi class="who">Ali:</bdi> The algorithm is compiling now. It's scrubbing five counties for major acquittals with anniversaries approaching in the next 72 hours.</p>
+                  <p class="chat-line"><bdi class="who">Nouran:</bdi> Filter for violent offenses and financial ruin. This killer only goes after the monsters.</p>
+                  <p class="chat-line"><bdi class="who">Ali:</bdi> Filtering.</p>
+                  <p class="chat-line"><bdi class="who">Ali:</bdi> ...We have a match.</p>
+                  <p class="chat-line"><bdi class="who">Nouran:</bdi> Who is it?</p>
+                  <p class="chat-line"><bdi class="who">Ali:</bdi> Victor Vance. Mob accountant. Walked free on a technicality exactly one year ago this Friday.</p>
+                  <p class="chat-line"><bdi class="who">Nouran:</bdi> That's it. That's the one. He's going to hit him on Friday. We have three days to set up surveillance.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="eof-sentinel" dir="ltr" lang="en"><span>— END OF FILE —</span></div>
+        </article>
+
+        <article class="file-panel" data-file="case-05" hidden>
+          <header class="file-banner" dir="ltr" lang="en">
+            <p class="sys-kicker">CASE 05</p>
+            <h2>THE DIGITAL SHADOW</h2>
+            <p>STATUS: ACTIVE / CRITICAL</p>
+            <p>LEAD INVESTIGATORS: ALI M. &amp; NOURAN F.</p>
+          </header>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[DOCUMENT 01: SURVEILLANCE LOG - FRIDAY 23:45 PM]</h3>
+          <pre class="terminal-dump" dir="ltr" lang="en">TARGET: Victor Vance (Mob Accountant)
+LOCATION: 4th Avenue Penthouse
+EVENT TIMELINE:
+23:15: Target enters penthouse. Security detail locks perimeter.
+23:42: Target's biometric vitals spike, then flatline.
+23:45: Initiative team (Ali M. &amp; Nouran F.) breaches room. Target deceased.
+CAUSE OF DEATH: Suspected neurotoxin, disguised as a massive localized stroke.</pre>
+          <div class="note" dir="ltr" lang="en">
+            <p>NOURAN'S NOTE: We were sitting right across the street. The guards were at the door. No one went in. But I checked the building's server. The camera feeds looped for exactly 14 seconds.</p>
+          </div>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[AUDIO TRANSCRIPT: BULLPEN DESK 4 - 02:15 AM]</h3>
+          <div class="transcript">
+            <p dir="ltr" lang="en"><bdi class="who">Nouran:</bdi> He didn't bypass the physical security. He bypassed the digital. He sent a localized blackout command to the penthouse router. That gave him a 14-second window to get in, administer the toxin, and get out.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Ali:</bdi> You can't spoof a blackout command from a random coffee shop without lagging the video feed. That takes a direct proxy. He had to be routing through a high-speed server.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Nouran:</bdi> Exactly. So I pulled the building's handshake logs. I'm running a trace on the proxy IP right now. We are going to find out exactly where this guy is sitting.</p>
+          </div>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[DOCUMENT 02: NETWORK TRACEROUTE EXPORT]</h3>
+          <pre class="terminal-dump" dir="ltr" lang="en">INITIATING REVERSE IP TRACE...
+Bouncing... Node 1 (Encrypted)... Node 2 (Clear)...
+TARGET IP RESOLVED: 192.168.4.112
+CROSS-REFERENCING LOCATION...
+MATCH FOUND: INTERNAL SUBNET - COLD CASE INITIATIVE
+PHYSICAL LOCATION: BASEMENT SERVER ROOM - RACK 4
+SYSTEM ALERT: CRITICAL THREAT DETECTED INSIDE PERIMETER</pre>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[NARRATIVE LOG: ALI]</h3>
+          <div class="narrative" dir="ltr" lang="en">
+            <p>When the IP resolved to our own subnet, the air in the bullpen went completely dead.</p>
+            <p>We were hunting a ghost, and the ghost was sitting in our own house.</p>
+            <p>If this killer had root access to our servers, he could see everything. He could see our case files. He could see every keystroke Nouran was making right now. He was watching us track him.</p>
+            <p>"Step away from the terminal," I told her, my voice sharp and entirely void of panic.</p>
+            <p>"Ali, the proxy is in our basement—"</p>
+            <p>"Lock the door and do not touch the network," I ordered, already out of my chair and sprinting toward the bullpen exit. "I have to pull the physical drives before he scrubs the internal logs or locks us out."</p>
+          </div>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[AUDIO TRANSCRIPT: INITIATIVE SERVER ROOM]</h3>
+          <div class="transcript">
+            <p dir="ltr" lang="en"><bdi class="who">Ali:</bdi> Where is it... Rack 4...</p>
+            <p dir="ltr" lang="en"><bdi class="who">Ali:</bdi> Come on. Isolate the drive. Give me the drive.</p>
+            <p dir="ltr" lang="en"><span class="who">Automated Voice:</span> THERMAL OVERLOAD DETECTED. HALON SYSTEM ARMED.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Ali:</bdi> No. No, no, no—</p>
+            <p dir="ltr" lang="en"><span class="who">Automated Voice:</span> INITIATING EMERGENCY DATA PURGE.</p>
+          </div>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[NARRATIVE LOG: ALI]</h3>
+          <div class="narrative" dir="ltr" lang="en">
+            <p>I coughed through the acrid smoke, stumbling backward into the hallway just as the heavy, steel fire doors slammed shut and magnetically locked.</p>
+            <p>The failsafe had triggered. I stood there, wiping my stinging eyes, watching through the reinforced glass as the thick white halon gas flooded the room, suffocating the servers.</p>
+            <p>He had rigged a dead man's switch.</p>
+            <p>The second I tried to isolate his proxy drive, his malware initiated a thermal surge that cooked the entire rack. He burned down our sanctuary just to cover his tracks. Months of cold case archives, algorithms, and digital evidence, completely vaporized in ten seconds.</p>
+            <p>Nouran ran down the stairwell a minute later, stopping dead when she saw the white gas pressed against the glass. She looked at me, her face pale.</p>
+            <p>"He's gone," I said quietly, leaning my head against the concrete wall.</p>
+            <p>He was desperate. But as I stood there watching the sparks die out in the dark, I knew one thing for certain: digital files can burn, but hardware doesn't evaporate.</p>
+          </div>
+
+          <div class="alert-block" dir="ltr" lang="en">
+            <p>[SYSTEM NOTIFICATION]</p>
+            <p>CRITICAL ERROR: ARCHIVE CONNECTION LOST.</p>
+            <p>84% OF DIGITAL INITIATIVE FILES CORRUPTED OR DESTROYED.</p>
+          </div>
+          <div class="eof-sentinel" dir="ltr" lang="en"><span>— END OF FILE —</span></div>
+        </article>
+
+        <article class="file-panel" data-file="case-06" hidden>
+          <header class="file-banner" dir="ltr" lang="en">
+            <p class="sys-kicker">CASE 06</p>
+            <h2>THE GHOST IN THE MACHINE</h2>
+            <p>STATUS: ACTIVE / CRITICAL</p>
+            <p>LEAD INVESTIGATORS: ALI M. &amp; NOURAN F.</p>
+          </header>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[DOCUMENT 01: INITIATIVE INCIDENT REPORT]</h3>
+          <div class="data-sheet" dir="ltr" lang="en">
+            <p>Incident: Catastrophic Server Room Failure (Halon Gas &amp; Surge Failsafe Triggered)</p>
+            <p>Data Loss: 84% of Cold Case Digital Archives Corrupted.</p>
+            <p>Cause: External cyber-intrusion triggered localized thermal overload.</p>
+            <p class="ruling">Site Status: HAZARDOUS. Airborne particulates and residual halon. Clearance restricted to Level 4 Hazmat personnel.</p>
+          </div>
+          <div class="note" dir="ltr" lang="en">
+            <p>NOURAN'S NOTE: The drives melted, but the killer needed a physical bridge to our network. Hardware doesn't vaporize.</p>
+          </div>
+
+          <div class="chat-block">
+            <h3 class="sys-header" dir="ltr" lang="en">[SECURE CHAT LOG: MOBILE BACKUP NETWORK - 04:12 AM]</h3>
+            <button type="button" class="preview-chat" dir="ltr" lang="en" aria-expanded="false" aria-controls="chat-06">&gt; [ PREVIEW CHAT ]</button>
+            <p class="cipher-wait" dir="ltr" lang="en">ENCRYPTED CHANNEL // AWAITING KEY</p>
+            <div class="chat-body" id="chat-06">
+              <div class="chat-inner" inert aria-hidden="true">
+                <div class="chat-log" dir="ltr" lang="en">
+                  <p class="chat-line"><bdi class="who">Nouran:</bdi> The fire inspector just opened the heavy doors to vent the smoke. I'm going in.</p>
+                  <p class="chat-line"><bdi class="who">Ali:</bdi> Nouran, don't. The air quality is still toxic. The racks might still be electrically live. Wait for the hazmat team to clear it in the morning.</p>
+                  <p class="chat-line"><bdi class="who">Nouran:</bdi> The data is gone, Ali. He beat us digitally. But I am not letting him walk away from this building. I'm wearing a respirator mask.</p>
+                  <p class="chat-line"><bdi class="who">Ali:</bdi> It's too dangerous. I am coming down there. Do not touch anything until I get there.</p>
+                  <p class="chat-line"><bdi class="who">Nouran:</bdi> Too late. I'm looking at Rack 4.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[NARRATIVE LOG: ALI]</h3>
+          <div class="narrative" dir="ltr" lang="en">
+            <p>I sprinted down the concrete stairwell, my lungs burning. I had told her it was too dangerous because I meant it. The thermal surge had melted the primary cooling lines; the room was a chaotic hazard of exposed wiring and chemical smoke.</p>
+            <p>But Nouran never listens to the word 'wait'.</p>
+            <p>When I burst through the heavy steel doors, she was standing in the ash, a respirator strapped over her face. She was shining a tactical flashlight straight into the gutted remains of Rack 4.</p>
+            <p>The digital failsafe had wiped the drives perfectly, just as it was designed to do. But as I walked up beside her, the beam of her flashlight settled on a charred, melted piece of plastic bolted to a routing switch.</p>
+            <p>My stomach dropped out completely.</p>
+            <p>This killer had been brilliant. He had thought of the halon, he had thought of the drive wipe, but he was still tied to the physical world. Hardware has serial numbers. Hardware leaves a paper trail. I realized with a sickening wave of adrenaline that he had left a physical anchor right inside our building, and Nouran had just pulled it up by the chain.</p>
+            <p>"Get a macro lens on that," I told her, my voice echoing hollowly in the cavernous, smoking room. We were about to find out exactly who this guy was.</p>
+          </div>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[EVIDENCE SCAN: ASSET TAG EXPORT]</h3>
+          <pre class="terminal-dump" dir="ltr" lang="en">TRACE RESULTS:
+Serial #883-XC-9002 was NOT purchased by the Cold Case Initiative.
+Date of Purchase: October 2, 2021 (Twelve days before Case 01)
+Buyer: A shell LLC registered to a private PO Box downtown.
+Signatory Name: JOSH ADAMS</pre>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[AUDIO TRANSCRIPT: SERVER ROOM]</h3>
+          <div class="transcript">
+            <p dir="ltr" lang="en"><bdi class="who">Nouran:</bdi> We have a name. Josh Adams.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Ali:</bdi> It could be a phantom identity. A stolen name to buy the hardware.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Nouran:</bdi> The PO Box was paid in cash, yearly. But I just ran the LLC through the municipal tax database. It has a physical commercial lease attached to it. A basement office off 7th Avenue.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Ali:</bdi> [Silence]</p>
+            <p dir="ltr" lang="en"><bdi class="who">Nouran:</bdi> He's there, Ali. He just burned our servers. He's going to go to ground.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Ali:</bdi> You're not going to that address. Not alone, and not right now.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Nouran:</bdi> If we wait for a warrant, he's going to vanish into the wind!</p>
+            <p dir="ltr" lang="en"><bdi class="who">Ali:</bdi> If this guy is willing to burn down a government server room, what do you think he's going to do to a basement door? It's a trap, Nouran. It is physically rigged. We need to call a tactical unit and wait for daylight.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Nouran:</bdi> I'm not losing him! I am going to that basement, Ali. With or without you.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Ali:</bdi> Fine. You are not walking into that trap alone.</p>
+          </div>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[CASE STATUS UPDATE]</h3>
+          <div class="status-update is-critical" dir="ltr" lang="en">
+            <p>UPDATE: Prime Suspect Identified: JOSH ADAMS.</p>
+            <p>STATUS: CRITICAL / FIELD PURSUIT AUTHORIZED.</p>
+          </div>
+          <div class="eof-sentinel" dir="ltr" lang="en"><span>— END OF FILE —</span></div>
+        </article>
+
+        <article class="file-panel" data-file="file-07" hidden>
+          <header class="file-banner" dir="ltr" lang="en">
+            <p class="sys-kicker">FILE 07 // RESTRICTED ACCESS</p>
+            <h2>RESTRICTED ACCESS</h2>
+            <p>WARNING: THIS FILE CONTAINS UNREDACTED FIELD DATA.</p>
+            <p>STATUS: SUSPECT AT LARGE.</p>
+          </header>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[AUDIO TRANSCRIPT: TACTICAL BREACH]</h3>
+          <div class="transcript">
+            <p dir="ltr" lang="en"><bdi class="who">Ali:</bdi> The door is steel-reinforced. Nouran, step back. If he's in there, he's not going to just surrender.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Nouran:</bdi> He's not getting away this time. On three. One. Two.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Nouran:</bdi> Clear left!</p>
+            <p dir="ltr" lang="en"><bdi class="who">Ali:</bdi> Clear right. The room is empty. CPU is gone.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Nouran:</bdi> Ali... look at the wall.</p>
+          </div>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[NARRATIVE LOG: ALI]</h3>
+          <div class="narrative" dir="ltr" lang="en">
+            <p>When the beam of Nouran's flashlight hit the center of the room, my stomach completely dropped out.</p>
+            <p>I watched her eyes lock onto the wall. There was no map of his crimes on that corkboard. No string connecting the monsters he had killed. Instead, the wall was covered in something else entirely. It was a shrine.</p>
+            <p>The entire corkboard was covered in photographs. But they weren't targets. They were all of Nouran. Hundreds of them. Nouran sitting at her desk at the Initiative. Nouran buying coffee two years ago. Nouran standing in the rain at the stairwell during Case 01. The angles were distant, hidden, meticulous.</p>
+            <p>He had been watching her. He had been watching her since before we were even partners.</p>
+            <p>Pinned to the very center of the board, surrounded by a halo of surveillance photos, was a single, handwritten note on Initiative stationary.</p>
+          </div>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[EVIDENCE SCAN: THE CENTER NOTE]</h3>
+          <div class="data-sheet" dir="ltr" lang="en">
+            <p>TRANSCRIPT OF RECOVERED NOTE:</p>
+          </div>
+          <blockquote class="recovered-note" dir="ltr" lang="en">
+            <p>"You are the only one who sees the physical truth, Nouran. The only one brilliant enough to grade my work. Keep looking. I'll always be watching."</p>
+          </blockquote>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[AUDIO TRANSCRIPT: BASEMENT OFFICE]</h3>
+          <div class="transcript">
+            <p dir="ltr" lang="en"><bdi class="who">Nouran:</bdi> He took these... he was standing right outside my apartment in this one.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Ali:</bdi> This sick, arrogant son of a bitch!</p>
+            <p dir="ltr" lang="en"><bdi class="who">Nouran:</bdi> He's not just a vigilante. He's obsessed. He burned down the server room because I got too close, and now... now he wants me to know he's looking right back at me.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Ali:</bdi> I am putting a protective detail on your apartment tonight. You are not walking to your car alone ever again.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Nouran:</bdi> Ali, I'm not going to hide from him.</p>
+            <p dir="ltr" lang="en"><bdi class="who">Ali:</bdi> I'm not asking you to hide! I'm telling you that I am never letting him get this close to you again. I swear to you, Nouran. I will protect you from him.</p>
+          </div>
+
+          <h3 class="sys-header" dir="ltr" lang="en">[NARRATIVE LOG: ALI]</h3>
+          <div class="narrative" dir="ltr" lang="en">
+            <p>She looked at me, her eyes wide, processing the sheer scale of the violation.</p>
+            <p>The ghost she was hunting wasn't just a killer anymore; he was a phantom living in the periphery of her entire life. I looked at the board, at the hundreds of photos of my best friend, and I felt a profound, heavy silence settle over me.</p>
+            <p>I realized exactly how much this mastermind controlled her in that moment. He had isolated her. He had made her terrified of the shadows, ensuring that the only person she would ever truly trust to keep her safe... was me.</p>
+          </div>
+
+          <div class="raw-feed" id="raw-feed" dir="ltr" lang="en">
+            <p>You've read the archive now.</p>
+            <p>You've seen the monsters the system created, and you've seen what it took to finally close their ledgers. Nouran is a brilliant detective. The best I've ever known. She found the parry fracture. She found the gumline injection. She traced the digital shadow all the way to that basement door.</p>
+            <p>We still sit across from each other every day at the Initiative. She still pulls the cold cases. She still looks for the phantom who stalked her. The ghost who violated her privacy just to prove a point.</p>
+            <p>She thinks Josh Adams is a monster out there in the city, always one step ahead, watching her from the dark. She locks her doors twice now. She checks her rearview mirror. And every single day, she thanks me for being the only person who makes her feel safe.</p>
+            <p>She needed a ghost to chase. And I needed her to stop looking at me.</p>
+            <p>I know you probably have a lot of questions right now. You've read through all these files, and you want to know how I pulled it off, or why I'm even letting you see this.</p>
+            <p>But before you go back to the beginning to look for the things you missed...</p>
+            <p>I never told you my real name, did I?</p>
+          </div>
+          <p class="end-mark" dir="ltr" lang="en">END OF ARCHIVE.</p>
+          <div class="eof-sentinel" dir="ltr" lang="en"><span>— END OF FILE —</span></div>
+        </article>
+
+      </div>
+      <footer class="modal-foot" dir="ltr" lang="en">
+        <p class="read-status" id="read-status">SCROLL TO END OF FILE TO LOG READ</p>
+      </footer>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="hint" dir="ltr" lang="en">THIS TERMINAL REQUIRES LOCAL SCRIPT EXECUTION.</p></noscript>
+  <script src="script.js" defer></script>
+</body>
+</html>
