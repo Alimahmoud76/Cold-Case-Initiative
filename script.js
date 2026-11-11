@@ -4,6 +4,11 @@
   const CHAIN = ["case-01", "case-02", "case-03", "case-04", "case-05", "case-06", "file-07"];
   const START = ["file-00", "case-01"];
   const STORAGE_KEY = "cci-theme1-unlocks";
+  const LANG_KEY = "cci-lang";
+  const DECRYPTED = {
+    en: "> [ DECRYPTED ]",
+    ar: "> [ تم فك التشفير ]"
+  };
 
   const LABELS = {
     "file-00": "FILE 00",
@@ -39,6 +44,8 @@
   const clockEl = document.getElementById("clock");
   const countEl = document.getElementById("clearance-count");
   const sequenceEl = document.getElementById("sequence-label");
+  const langToggle = document.getElementById("lang-toggle");
+  const langCode = document.getElementById("lang-code");
   const bottombar = document.getElementById("bottombar");
   const folders = Array.from(document.querySelectorAll(".folder"));
   const panels = Array.from(document.querySelectorAll(".file-panel"));
@@ -48,7 +55,8 @@
     unlocked: new Set(START),
     openId: null,
     readComplete: false,
-    lastFocus: null
+    lastFocus: null,
+    lang: "en"
   };
 
   let toastTimer = 0;
@@ -190,6 +198,55 @@
       }
       fields.lines[lineIndex].el.classList.add("is-typing");
     }, 80);
+  }
+
+  function writeCopy(el, value) {
+    const who = el.querySelector(":scope > .who");
+    if (who) {
+      let node = who.nextSibling;
+      while (node) {
+        const next = node.nextSibling;
+        if (node.nodeType === Node.TEXT_NODE) node.remove();
+        node = next;
+      }
+      who.after(document.createTextNode(value ? " " + value : ""));
+      return;
+    }
+    if (el.children.length) return;
+    el.textContent = value;
+  }
+
+  function applyLanguage(lang) {
+    window.clearInterval(typeTimer);
+    if (typingFields) restoreBanner(typingFields);
+    typingFields = null;
+    bannerCopy.clear();
+    state.lang = lang === "ar" ? "ar" : "en";
+    const rtl = state.lang === "ar";
+    document.querySelectorAll("[data-en]").forEach(function (el) {
+      const expanded = el.classList.contains("preview-chat") && el.getAttribute("aria-expanded") === "true";
+      const value = expanded ? DECRYPTED[state.lang] : el.getAttribute(rtl ? "data-ar" : "data-en");
+      writeCopy(el, value);
+      el.dir = rtl ? "rtl" : "ltr";
+      el.lang = state.lang;
+    });
+    document.querySelectorAll(".narrative, .note, .chat-log, .transcript, .raw-feed, .recovered-note").forEach(function (block) {
+      if (!block.querySelector("[data-en]")) return;
+      block.dir = rtl ? "rtl" : "ltr";
+      block.lang = state.lang;
+    });
+    try {
+      sessionStorage.setItem(LANG_KEY, state.lang);
+    } catch (err) {
+      /* private browsing can block storage */
+    }
+    if (langToggle && langCode) {
+      langCode.textContent = rtl ? "EN" : "AR";
+      langToggle.setAttribute("aria-label", rtl ? "Switch to English" : "Switch to Arabic");
+      langToggle.setAttribute("aria-pressed", rtl ? "true" : "false");
+    }
+    document.documentElement.lang = state.lang;
+    if (state.openId) typeHeader(state.openId);
   }
 
   function placeModalOrigin(folder) {
@@ -498,7 +555,7 @@
     const inner = log.querySelector(".chat-inner");
     button.setAttribute("aria-expanded", "true");
     button.disabled = true;
-    button.textContent = "> [ DECRYPTED ]";
+    button.textContent = DECRYPTED[state.lang];
     inner.inert = false;
     inner.setAttribute("aria-hidden", "false");
     log.classList.add("open");
@@ -516,6 +573,18 @@
 
   loadUnlocks();
   render(null);
+  if (langToggle) {
+    langToggle.addEventListener("click", function () {
+      applyLanguage(state.lang === "ar" ? "en" : "ar");
+    });
+  }
+  let savedLang = "en";
+  try {
+    savedLang = sessionStorage.getItem(LANG_KEY) === "ar" ? "ar" : "en";
+  } catch (err) {
+    savedLang = "en";
+  }
+  applyLanguage(savedLang);
   tick();
   window.setInterval(tick, 1000);
 })();
